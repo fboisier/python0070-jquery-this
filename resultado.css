@@ -1,0 +1,31 @@
+header div h2, 
+#lista-uno li a{
+    color: red;
+}
+
+header div p {
+    color: purple;
+}
+
+header h2,
+#lista-uno li{
+    color: blue;
+}
+
+.negro,
+section p{
+    background-color: black;
+}
+
+.blanca,
+section p{
+    color: white;
+}
+
+header h3{
+    background-color: blue;
+}
+
+footer ul li ul li {
+    background-color: red;
+}

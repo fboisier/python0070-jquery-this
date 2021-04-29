@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            
+            $("header div h2, #lista-uno li a,footer ul li ul li").click(function () { 
+                alert("ROJO");
+            });
+
+            $("header div p").click(function () { 
+                alert("MORADO");
+            });
+
+            $(".blanca, section p").click(function () { 
+                alert("BLANCO");
+            });
+
+            $("#lista-uno li").click(function () { 
+                alert("AZUL");
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h2>ROJO</h2>
+            <p>MORADO</p>
+        </div>
+
+        <h3 class="blanca">BLANCO</h3>
+    </header>
+
+    <section>
+        
+        <ul id="lista-uno">
+            <li>AZUL <a href="#"> ROJO </a></li>
+            <li>AZUL <a href="#"> ROJO </a></li>
+            <li>AZUL <a href="#"> ROJO </a></li>
+        </ul>
+        <p>BLANCO</p>
+    </section>
+
+    <footer>
+        <ul>
+            <li>Yo no debo dar ninguna ALERTA. 
+                <ul>
+                    <li>ROJO</li>
+                </ul>
+            </li>    
+        </ul>
+    </footer>
+
+</body>
+</html>
